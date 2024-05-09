@@ -1,0 +1,14 @@
+.sidenav-img{
+    width: -webkit-fill-available;
+}
+.sidenav-style{
+    width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidnav-content{
+    display: flex;
+    justify-content: space-around;
+}
