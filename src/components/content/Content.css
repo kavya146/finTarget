@@ -1,0 +1,22 @@
+.dashboard-style{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.main-style{
+    width: calc(100% - 15%); 
+}
+.span-color-decoration{
+    color: skyblue;
+    text-decoration:underline;
+}
+.span-style{
+    display: flex;
+    flex-direction: column;
+    
+}
+#line {
+    width: 100%;
+    height: 1px; /* Adjust height as needed */
+    background-color: black; /* Line color */
+  }

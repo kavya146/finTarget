@@ -2,8 +2,10 @@
     width: -webkit-fill-available;
 }
 .sidenav-style{
-    width: 10%;
+    width: 15%;
     height: 100vh;
+    background-color: antiquewhite;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
