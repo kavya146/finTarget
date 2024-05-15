@@ -1,9 +1,10 @@
 import "./App.css";
 import Dashboard from "./components/content/Dashboard";
 import Analytics from "./components/content/Analytics";
-import SideNav from "./components/sideNav/SideNav";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainContent from "./components/mainContent/MainContent";
+import Broker from "./components/content/Broker";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <MainContent component={<Dashboard />} />,
+  },
+  {
+    path: "/broker",
+    element: <MainContent component={<Broker />} />,
   },
   {
     path: "/analytics",

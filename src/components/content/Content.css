@@ -17,6 +17,38 @@
 }
 #line {
     width: 100%;
+   
     height: 1px; /* Adjust height as needed */
     background-color: black; /* Line color */
+  }
+  #line-centre{
+    width: 90%;
+    margin-left: 5%;
+    height: 1px;
+    background-color: silver;
+  }
+ .broker-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+    
+ }
+  .box-style{
+    background-color: aliceblue;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  .btn-broker{
+    display: flex;
+    align-items: center;
+    background-color: skyblue;
+    border-color: skyblue;
+    border-radius: 3px;
+  }
+  .btn-box-centre{
+    display: flex;
+    justify-content: center;
   }
