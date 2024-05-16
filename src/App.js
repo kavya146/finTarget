@@ -5,6 +5,7 @@ import Analytics from "./components/content/Analytics";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainContent from "./components/mainContent/MainContent";
 import Broker from "./components/content/Broker";
+import Strategy from "./components/content/Strategy";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,8 @@ const router = createBrowserRouter([
     element: <MainContent component={<Broker />} />,
   },
   {
-    path: "/analytics",
-    element: <MainContent component={<Analytics />} />,
+    path: "/strategy",
+    element: <MainContent component={<Strategy />} />,
   },
 ]);
 

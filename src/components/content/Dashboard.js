@@ -1,25 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Content.css";
+import CurrentTime from "./CurrentTime";
 
 const Dashboard = () => {
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const intervalID = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalID);
-    };
-  }, []);
-
   return (
     <div className="main-style">
       <div className="dashboard-style">
         <div>Welcome</div>
         <div>Dashboard</div>
-        <div>{currentTime.toLocaleString()}</div>
+        <div>
+          <CurrentTime />
+        </div>
       </div>
 
       <div id="line"></div>

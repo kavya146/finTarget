@@ -1,24 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Content.css";
+import CurrentTime from "./CurrentTime";
 
 const Broker = () => {
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const intervalID = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalID);
-    };
-  }, []);
-
   return (
     <div className="main-style">
       <div className="dashboard-style">
         <div>Broker</div>
-        <div>{currentTime.toLocaleString()}</div>
+        <div>
+          <CurrentTime />
+        </div>
       </div>
       <div id="line"></div>
       <div style={{ padding: "30px" }}>Broker Setup</div>
