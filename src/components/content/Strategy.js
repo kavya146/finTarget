@@ -3,6 +3,13 @@ import CurrentTime from "./CurrentTime";
 import StrategyAddLeg from "./StrategyAddLeg";
 import StrikeCriteria from "./StrikeCriteria";
 import StrikeType from "./StrikeType";
+import Position from "./Position";
+import OptionType from "./OptionType";
+import Segments from "./Segments";
+import StopLoss from "./StopLoss";
+import TotalLots from "./TotalLots";
+import OverallTarget from "./OverallTarget";
+import ProfitManagement from "./ProfitManagement";
 
 const Strategy = () => {
   return (
@@ -38,10 +45,46 @@ const Strategy = () => {
           </div>
         </div>
         <div id="line-centre"></div>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
-          <StrategyAddLeg />
-          <StrikeCriteria />
-          <StrikeType />
+
+        <div>
+          <div style={{ marginLeft: "25px", marginTop: "20px" }}>Add Leg</div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              backgroundColor: "#fafafa",
+              padding: "30px",
+            }}
+          >
+            <StrategyAddLeg />
+            <Segments />
+            <Position />
+            <OptionType />
+            <StrikeCriteria />
+            <StrikeType />
+            <TotalLots />
+            <button>Add Leg</button>
+          </div>
+        </div>
+
+        <div id="line-centre"></div>
+        <div style={{ display: "flex" }}>
+          <div>
+            <div style={{ marginLeft: "25px", marginTop: "20px" }}>
+              Overall MTM
+            </div>
+            <div style={{ display: "flex" }}>
+              <div>
+                <StopLoss />
+              </div>
+              <div>
+                <OverallTarget />
+              </div>
+            </div>
+          </div>
+          <div>
+            <ProfitManagement />
+          </div>
         </div>
       </div>
     </div>
